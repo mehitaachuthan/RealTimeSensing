@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -321.7, "left": 14.2, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -234.34,
+      "left": 131.15,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -310.28,
+      "left": 155.35,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -315.3,
+      "left": -272.9,
+      "attrs": { "distance": "2" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -140.8,
+      "left": -296.8,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -402.9,
+      "left": -91.8,
+      "attrs": { "temperature": "40.9" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "led1:C", "esp:GND.1", "black", [ "v0" ] ],
+    [ "r1:1", "led1:A", "red", [ "h0" ] ],
+    [ "esp:D2", "r1:2", "red", [ "h0" ] ],
+    [ "esp:GND.2", "ntc1:GND", "black", [ "h-28.62", "v-155.79" ] ],
+    [ "ntc1:OUT", "esp:D32", "green", [ "h19.2", "v57.5" ] ],
+    [ "ntc1:VCC", "esp:3V3", "red", [ "h57.6", "v-38.4", "h192", "v163.2", "h0", "v28.8" ] ],
+    [
+      "esp:3V3",
+      "temp1:VCC",
+      "green",
+      [ "v9.6", "h114.9", "v-192", "h-268.8", "v57.6", "h-9.6" ]
+    ],
+    [ "temp1:GND", "esp:GND.2", "black", [ "v144", "h9.6" ] ],
+    [ "temp1:DQ", "esp:D32", "green", [ "v0" ] ],
+    [ "dht1:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v19.2", "h67.2", "v-144", "h211.2", "v249.6" ] ],
+    [ "dht1:SDA", "esp:D32", "green", [ "v0" ] ],
+    [ "ultrasonic1:VCC", "esp:VIN", "red", [ "v28.8" ] ],
+    [ "ultrasonic1:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "esp:D25", "green", [ "v9.6", "h181.6", "v-48" ] ],
+    [ "ldr1:GND", "esp:GND.2", "black", [ "h76.8", "v-0.4" ] ],
+    [ "ldr1:VCC", "esp:3V3", "red", [ "h124.8", "v19.2", "h153.6", "v-48" ] ],
+    [ "ultrasonic1:TRIG", "esp:D26", "green", [ "v19.2", "h201.2", "v-19.2" ] ],
+    [ "ldr1:AO", "esp:D35", "green", [ "h96", "v-163.9" ] ]
+  ],
+  "dependencies": {}
+}
