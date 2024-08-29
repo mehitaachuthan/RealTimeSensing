@@ -514,6 +514,17 @@ void loopCheckTask(void *pvParameters)
     }
     client.loop();
 
+    /*
+      Communication Protocol:
+        For each sensor:
+        a. Send the Sensor Type
+        b. Send the Filter Type
+        c. Send the data value
+        ...[repeat for other sensors]
+        Send the end of sequence code X
+      * Note: each message is in the form of a data packet with a start bit, data portion, parity bit, and stop bit
+    */
+
     // for each sensor: send the sensor type, then send the unfiltered and processed values
     client.publish("transmit_sensors_collect_topic" , "#T0&" );
     processChunkList( temperature_list , temperature_list_index, &temperature_prev_edge_input_value , &temperature_prev_low_pass );
