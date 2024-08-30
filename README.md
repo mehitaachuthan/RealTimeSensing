@@ -28,7 +28,7 @@ Clone the Git Repository
 
 **Installation and Setup Instructions for the MQTT Server**
 1. Install Eclipse Mosquitto
-2. Install node-red
+2. Install node-red in powershell or terminal
 3. Run node-red in powershell or terminal in place where mosquitto is installed (depending on system being used). Open http://127.0.0.1:1880/ in a browser.
 4. Set up the connection between MQTT In and MQTT Out nodes.
 
