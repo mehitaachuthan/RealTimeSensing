@@ -1,7 +1,7 @@
 # RealTimeSensingProject
 
 **Report**
-
+[a link](https://github.com/mehitaachuthan/RealTimeSensing/blob/main/report.pdf)
 
 **Video**
 [![Efficiency Discussion Video]()](https://drive.google.com/file/d/1J6uLTuPD271CJzQFxV3FHqdN2zXoW3aO/view?usp=sharing)
