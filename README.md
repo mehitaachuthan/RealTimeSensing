@@ -9,18 +9,22 @@
 Clone the Git Repository
 
 **Installation Instructions for the Simulation [instructions specific for vscode]**
-1. Install the extension PlatformIO
-2. In PIO Home tab > Library, install libraries: 'DHT sensor library for ESPx' and 'PubSubClient'
-3. Get a license related to WokWi. The community license should be enough to run and test. (But the circuit diagram can not be modified with the community license.
+1. folder: realTimeSimulator/
+   (open folder in separate editor window)
+3. Install the extension PlatformIO
+4. In PIO Home tab > Library, install libraries: 'DHT sensor library for ESPx' and 'PubSubClient'
+5. Get a license related to WokWi. The community license should be enough to run and test. (But the circuit diagram can not be modified with the community license.
    Use the wokwi online simulator to make changes to diagram.json and then copy over the code to that file in the project.)
-5. Make addresses have single quotes in the wokwi.toml file and modify backslashes in path name according to system.
+6. Make addresses have single quotes in the wokwi.toml file and modify backslashes in path name according to system.
    Build once to get the address paths of the Binary file (.bin) and Linking file (.elf). Update the wokwi.toml file with the paths.
-6. Clean and Build after each change (use the buttons on the top of vscode to Build and Clean).
+7. Clean and Build after each change (use the buttons on the top of vscode to Build and Clean).
 
 **Installation Instructions for the Python Visualization Application**
-1. Make a Python virtual environment.
-2. Install the packages in requirements.txt
-3. Run the 'realTimeVisualization.py' file
+1. folder: pythonVisualizerApplication/
+   (open folder in separate editor window)
+3. Make a Python virtual environment.
+4. Install the packages in requirements.txt
+5. Run the 'realTimeVisualization.py' file
 
 **Installation and Setup Instructions for the MQTT Server**
 1. Install Eclipse Mosquitto
@@ -43,4 +47,5 @@ Clone the Git Repository
 **Note:** For the application to work: node-red, the simulation, and the python script need to all be running
 Simulation: Click play button on the diagram.json file in a separate vscode window. Simulation should start. Before starting simulation, close the Wokwi Simulator tab and start from diagram.json to get right initial values.
 MQTT: Run node-red in powershell or terminal in place where mosquitto is installed
-Visualization Python Script: Run the 'realTimeVisualization.py' file in a separate vscode window.
+Visualization Python Script: Run the 'realTimeVisualization.py' file
+(Simulation and Visualization folders in separate windows and run in separate windows)
