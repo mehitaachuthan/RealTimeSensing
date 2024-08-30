@@ -24,7 +24,7 @@ Clone the Git Repository
 
 ![alt text](https://github.com/mehitaachuthan/RealTimeSensing/blob/main/img/mqtt_diagram.PNG?raw=true)
 
-5.Set up the server.
+5. Set up the server.
 
 ![alt text](https://github.com/mehitaachuthan/RealTimeSensing/blob/main/img/mqtt_server_setup.PNG?raw=true)
 
