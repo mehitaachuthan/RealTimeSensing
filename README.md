@@ -23,6 +23,10 @@ Clone the Git Repository
 4. Set up the connection between MQTT In and MQTT Out nodes.
 5. Set up the topics for input and output.
 6. Set up the server.
+![alt text](https://github.com/mehitaachuthan/RealTimeSensing/blob/main/img/mqtt_diagram.PNG?raw=true)
+![alt text](https://github.com/mehitaachuthan/RealTimeSensing/blob/main/img/mqtt_in_topic.PNG?raw=true)
+![alt text](https://github.com/mehitaachuthan/RealTimeSensing/blob/main/img/mqtt_out_topic.PNG?raw=true)
+![alt text](https://github.com/mehitaachuthan/RealTimeSensing/blob/main/img/mqtt_server_setup.PNG?raw=true)
 
 **Note:** For the application to work: node-red, the simulation, and the python script need to all be running
 Simulation: Click play button on the diagram.json file in a separate vscode window. Simulation should start.
