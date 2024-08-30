@@ -4,7 +4,7 @@
 [Project Flow Report](https://github.com/mehitaachuthan/RealTimeSensing/blob/main/report.pdf)
 
 **Video**
-[![Efficiency Discussion Video]()](https://drive.google.com/file/d/1J6uLTuPD271CJzQFxV3FHqdN2zXoW3aO/view?usp=sharing)
+[![Efficiency Discussion Video]()](https://drive.google.com/file/d/1qhB-Yg8pUYaj6Wv23vKdgha5nKxJcYgW/view?usp=sharing)
 
 Clone the Git Repository
 
@@ -41,6 +41,6 @@ Clone the Git Repository
 
 
 **Note:** For the application to work: node-red, the simulation, and the python script need to all be running
-Simulation: Click play button on the diagram.json file in a separate vscode window. Simulation should start.
+Simulation: Click play button on the diagram.json file in a separate vscode window. Simulation should start. Before starting simulation, close the Wokwi Simulator tab and start from diagram.json to get right initial values.
 MQTT: Run node-red in powershell or terminal in place where mosquitto is installed
 Visualization Python Script: Run the 'realTimeVisualization.py' file in a separate vscode window.
